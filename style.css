@@ -8,7 +8,7 @@ body {
   .player-card img {
     width: 350px; 
     height: auto; /* Automatically adjust height to maintain aspect ratio */
-    max-width: 100%; /* Ensure the image doesn't overflow the container */
+    max-width: none; /* Ensure the image doesn't overflow the container */
     object-fit: contain; /* Ensures the aspect ratio is preserved */
     border-radius: 10px; /* Optional: Rounded corners */
   }
