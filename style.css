@@ -4,20 +4,23 @@ body {
   padding: 0;
   background-color: #f8f9fa;
 }
- .player-card img {
-    width: 50px; /* Set the desired width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: Adds rounded corners */
+ 
+  .player-card img {
+    width: 150px; /* Set the desired width */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    max-width: 100%; /* Ensure the image doesn't overflow the container */
+    object-fit: contain; /* Ensures the aspect ratio is preserved */
+    border-radius: 10px; /* Optional: Rounded corners */
   }
-.player-card {
-    text-align: center; /* Align content for better appearance */
-    margin: 10px; /* Add some spacing between cards */
-    padding: 10px; /* Add padding inside the cards */
-    border: 1px solid #ddd; /* Optional: Add a border for better visibility */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+
+  .player-card {
+    text-align: center; /* Center content in the card */
+    margin: 10px; /* Spacing between cards */
+    padding: 10px; /* Padding inside the card */
+    border: 1px solid #ddd; /* Optional: Add a border */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
     border-radius: 10px; /* Optional: Rounded edges for the card */
   }
-</style>
 
 
 .header {
