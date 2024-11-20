@@ -4,22 +4,34 @@ body {
   padding: 0;
   background-color: #f8f9fa;
 }
+#player-profiles::-webkit-scrollbar {
+    width: 8px; /* Scrollbar width */
+}
+
+#player-profiles::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar thumb color */
+    border-radius: 4px; /* Rounded scrollbar */
+}
+
+#player-profiles::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker on hover */
+}
  
 .player-card img {
     width: 150px; 
-    height: auto; /* Automatically adjust height to maintain aspect ratio */
-    max-width: none; /* Ensure the image doesn't overflow the container */
-    object-fit: contain; /* Ensures the aspect ratio is preserved */
-    border-radius: 10px; /* Optional: Rounded corners */
+    height: auto; 
+    max-width: none; 
+    object-fit: contain;
+    border-radius: 10px; 
   }
 
   .player-card {
-    text-align: center; /* Center content in the card */
-    margin: 10px; /* Spacing between cards */
-    padding: 10px; /* Padding inside the card */
-    border: 1px solid #ddd; /* Optional: Add a border */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
-    border-radius: 10px; /* Optional: Rounded edges for the card */
+    text-align: center; 
+    margin: 10px; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
   }
 
 
