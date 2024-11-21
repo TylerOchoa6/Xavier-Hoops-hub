@@ -4,6 +4,23 @@ body {
   padding: 0;
   background-color: #f8f9fa;
 }
+<<<<<<< HEAD
+=======
+
+#player-profiles::-webkit-scrollbar {
+  width: 8px; /* Scrollbar width */
+}
+
+#player-profiles::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar thumb color */
+  border-radius: 4px; /* Rounded scrollbar edges */
+}
+
+#player-profiles::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker color on hover */
+}
+ 
+>>>>>>> 988070c (Updated website content)
 .player-card img {
     width: 150px; 
     height: auto; 
