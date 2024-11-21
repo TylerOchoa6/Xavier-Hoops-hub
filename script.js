@@ -4,6 +4,3 @@ document.querySelector("button").addEventListener("click", () => {
   alert(`Your comment: "${comment}" has been submitted!`);
   document.querySelector("textarea").value = "";
 });
-
-
-
