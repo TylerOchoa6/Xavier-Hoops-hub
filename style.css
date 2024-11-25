@@ -69,31 +69,3 @@ body {
   background-color: #003366;
   color: white;
 }
-/* Style for the entire player profiles section */
-#player-profiles {
-  border: 2px solid #ccc; /* Add borders around the section */
-  border-radius: 8px; /* Optional: Rounded corners */
-  padding: 10px; /* Add spacing inside the section */
-  max-width: 100%; /* Ensure it doesn’t exceed the page width */
-  overflow-x: auto; /* Enable horizontal scrolling */
-  overflow-y: hidden; /* Prevent vertical scrolling */
-}
-
-/* The container for scrollable content */
-.scroll-container {
-  display: flex; /* Align items horizontally */
-  gap: 15px; /* Space between items */
-  padding-bottom: 10px; /* Add padding to the bottom */
-  width: max-content; /* Ensure the container's width expands with content */
-}
-
-/* Style for individual player cards */
-.player-card {
-  border: 1px solid #ddd; /* Border around each card */
-  border-radius: 5px; /* Optional: Rounded corners for cards */
-  padding: 15px; /* Space inside the card */
-  background-color: #f9f9f9; /* Light gray background */
-  text-align: center; /* Center the text inside each card */
-  min-width: 150px; /* Set a fixed width for each card */
-}
-
