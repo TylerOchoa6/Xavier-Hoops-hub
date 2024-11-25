@@ -21,6 +21,24 @@ header {
     font-weight: bold;
 }
 
+/* Section Box Styles */
+.section-box {
+    background: #fff;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+.section-box h2 {
+    border-bottom: 2px solid #012169;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Hero Section */
 .hero {
     background: url('assets/images/hero.jpg') no-repeat center center/cover;
     color: #fff;
@@ -28,16 +46,7 @@ header {
     padding: 3rem 1rem;
 }
 
-/* Section Styles */
-section {
-    padding: 2rem;
-    margin: 1rem auto;
-    max-width: 1200px;
-    background: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Game Recap Styles */
+/* Game Recaps */
 .game-recap-container {
     display: flex;
     flex-wrap: wrap;
@@ -51,7 +60,7 @@ section {
     flex: 1 1 calc(33.333% - 20px);
 }
 
-/* Player Grid Styles */
+/* Player Grid */
 .player-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -71,7 +80,7 @@ section {
     object-fit: cover;
 }
 
-/* Stats Table Styles */
+/* Stats Table */
 .stats-table {
     width: 100%;
     border-collapse: collapse;
