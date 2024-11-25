@@ -23,7 +23,6 @@ header {
 
 /* Section Box Styles */
 .section-box {
-    background: #fff;
     margin: 2rem auto;
     padding: 1.5rem;
     border: 1px solid #ddd;
@@ -32,18 +31,36 @@ header {
     max-width: 1200px;
 }
 
+/* Section Colors */
+.hero {
+    background: #dbe8ff;
+    text-align: center;
+    color: #012169;
+    padding: 3rem 1rem;
+}
+
+#game-recaps {
+    background: #fef8e7;
+}
+
+#player-roster {
+    background: #e7f9f8;
+}
+
+#team-stats {
+    background: #f7f5ff;
+}
+
+#fan-zone {
+    background: #ffe6e6;
+}
+
+/* Section Header Styling */
 .section-box h2 {
     border-bottom: 2px solid #012169;
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
-}
-
-/* Hero Section */
-.hero {
-    background: url('assets/images/hero.jpg') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-    padding: 3rem 1rem;
+    color: #012169;
 }
 
 /* Game Recaps */
@@ -56,7 +73,7 @@ header {
 .recap-card {
     border: 1px solid #ddd;
     padding: 15px;
-    background: #f9f9f9;
+    background: #fff;
     flex: 1 1 calc(33.333% - 20px);
 }
 
@@ -72,6 +89,7 @@ header {
     border: 1px solid #ddd;
     background: #fff;
     padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .player-card img {
@@ -103,3 +121,4 @@ textarea {
     padding: 10px;
     margin-bottom: 10px;
 }
+
