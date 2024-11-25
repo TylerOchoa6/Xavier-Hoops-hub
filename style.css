@@ -1,92 +1,70 @@
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #2c3e4f;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
-.player-grid {
-  display: flex; /* Align items horizontally */
-  flex-wrap: wrap; /* Prevent wrapping */
-  gap: 20px; /* Add space between cards */
-  padding: 10px;
-  max-width: 100%;
-  margin: 0 auto;
-  border: 2px solid #ddd; /* Add a border to visually contain the section */
-  box-sizing:border
-}
-
-.player-card {
-  display: flex;
-  flex-direction: column; /* Stack content vertically */
-  align-items: center; /* Center content horizontally */
-  border: 1px solid #ccc; /* Add a border to the card */
-  border-radius: 10px; /* Rounded corners */
-  padding: 10px;
-  width: 150px; /* Set a consistent width */
-  min-width: 150px; /* Prevent cards from shrinking too much */
-  height: 310px; 
- background-color: #f9f9f9; /* Light gray background */
-  text-align: center;
-}
-
-.player-card img {
-  width: 100%; /* Make the image responsive */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Optional: Rounded image corners */
-}
-
-.player-card p {
-  margin: 5px 0; /* Add spacing between text elements */
-}
-
 
 .header {
-  background-color: #003366;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
-
-.navbar {
-  background-color: #00509e;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
+    background: navy;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
 }
 
 .navbar a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
-.section {
-  margin: 20px;
-  padding: 20px;
-  background-color: #2c3e4f;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.hero {
+    background: url('assets/images/hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 2rem;
 }
 
+h2 {
+    color: navy;
+}
+
+section {
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 1200px;
+}
+
+/* Game Recap Grid */
+.game-recap-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.game-recap-container .recap-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    flex: 1 1 30%;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Player Grid */
 .player-grid {
-  display: flex;
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
 }
 
-.player-card {
-  width: 150px;
-  text-align: center;
-  background-color: #f1f1f1;
-  padding: 10px;
-  border-radius: 8px;
+.player-grid .player-card {
+    background: white;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #003366;
-  color: white;
-}
+/* Fan
