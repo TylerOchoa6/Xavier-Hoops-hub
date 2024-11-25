@@ -10,8 +10,11 @@ body {
   gap: 20px; /* Add space between cards */
   overflow-x: auto; /* Enable horizontal scrolling */
   padding: 10px;
+  max-width: 100%;
+  margin: 0 auto;
   border: 2px solid #ddd; /* Add a border to visually contain the section */
   height: auto;
+  box-sizing: border-box;
 }
 
 .player-card {
