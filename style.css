@@ -27,35 +27,11 @@ header {
     padding: 1.5rem;
     border: 1px solid #ddd;
     border-radius: 8px;
+    background-color: #f7f7f7;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 1200px;
 }
 
-/* Section Colors */
-.hero {
-    background: #dbe8ff;
-    text-align: center;
-    color: #012169;
-    padding: 3rem 1rem;
-}
-
-#game-recaps {
-    background: #fef8e7;
-}
-
-#player-roster {
-    background: #e7f9f8;
-}
-
-#team-stats {
-    background: #f7f5ff;
-}
-
-#fan-zone {
-    background: #ffe6e6;
-}
-
-/* Section Header Styling */
 .section-box h2 {
     border-bottom: 2px solid #012169;
     padding-bottom: 0.5rem;
@@ -63,21 +39,7 @@ header {
     color: #012169;
 }
 
-/* Game Recaps */
-.game-recap-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.recap-card {
-    border: 1px solid #ddd;
-    padding: 15px;
-    background: #fff;
-    flex: 1 1 calc(33.333% - 20px);
-}
-
-/* Player Grid */
+/* Player Profiles */
 .player-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -96,18 +58,21 @@ header {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
 }
 
 /* Stats Table */
 .stats-table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 1rem;
 }
 
 .stats-table th, .stats-table td {
     border: 1px solid #ddd;
     padding: 8px;
-    text-align: left;
+    text-align: center;
 }
 
 .stats-table th {
@@ -115,10 +80,10 @@ header {
     font-weight: bold;
 }
 
-/* Fan Zone */
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #012169;
+    color: #fff;
 }
-
