@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xavier Hoops Hub</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -12,53 +13,127 @@
         <h1>Xavier Hoops Hub</h1>
         <nav class="navbar">
             <a href="#game-recaps">Game Recaps</a>
-            <a href="#player-profiles">Player Profiles</a>
-            <a href="#schedule">Upcoming Schedule</a>
+            <a href="#player-roster">Player Roster</a>
+            <a href="#team-stats">Team Statistics</a>
             <a href="#fan-zone">Fan Zone</a>
-            <a href="#news">Articles & News</a>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
         <h2>Inside Look at the Musketeers Season</h2>
-        <p>Your best source for Xavier basketball stats, insights, and highlights!</p>
+        <p>Follow every game, every play, and every highlight. Stay ahead with Xavier Basketball insights!</p>
     </section>
 
     <!-- Game Recaps -->
     <section id="game-recaps">
-        <h2>Game Recaps & Analysis</h2>
-        <div class="game-recap-container" id="recap-list"></div>
+        <h2>Game Recaps</h2>
+        <div class="game-recap-container">
+            <div class="recap-card">
+                <h3>Nov 20, 2024 vs Villanova</h3>
+                <p>Score: 78-65</p>
+                <a href="assets/videos/game1.mp4" target="_blank">Watch Highlights</a>
+            </div>
+            <div class="recap-card">
+                <h3>Nov 15, 2024 vs Butler</h3>
+                <p>Score: 84-72</p>
+                <a href="assets/videos/game2.mp4" target="_blank">Watch Highlights</a>
+            </div>
+        </div>
     </section>
 
-    <!-- Player Profiles -->
-    <section id="player-profiles">
-        <h2>Player Profiles</h2>
-        <div class="player-grid" id="player-grid"></div>
+    <!-- Player Roster -->
+    <section id="player-roster">
+        <h2>Player Roster</h2>
+        <div class="player-grid">
+            <div class="player-card">
+                <img src="assets/images/player1.jpg" alt="Player 1">
+                <h3>Roddie Anderson III</h3>
+                <p>Position: Guard</p>
+                <p>Height: 6'3"</p>
+                <p>Weight: 190 lbs</p>
+                <p>Class: Junior</p>
+                <p>Birthplace: Orange County, CA</p>
+            </div>
+            <div class="player-card">
+                <img src="assets/images/player2.jpg" alt="Player 2">
+                <h3>Jane Doe</h3>
+                <p>Position: Forward</p>
+                <p>Height: 6'1"</p>
+                <p>Weight: 170 lbs</p>
+                <p>Class: Senior</p>
+                <p>Birthplace: Columbus, OH</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Schedule -->
-    <section id="schedule">
-        <h2>Upcoming Schedule</h2>
-        <div class="schedule-container" id="schedule-container"></div>
+    <!-- Team Statistics -->
+    <section id="team-stats">
+        <h2>Team Statistics</h2>
+        <table class="stats-table">
+            <thead>
+                <tr>
+                    <th>Statistic</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Points Per Game</td>
+                    <td>78.5</td>
+                </tr>
+                <tr>
+                    <td>Rebounds Per Game</td>
+                    <td>35.2</td>
+                </tr>
+                <tr>
+                    <td>Assists Per Game</td>
+                    <td>15.3</td>
+                </tr>
+                <tr>
+                    <td>Field Goal Percentage</td>
+                    <td>47.8%</td>
+                </tr>
+                <tr>
+                    <td>Three-Point Percentage</td>
+                    <td>36.4%</td>
+                </tr>
+                <tr>
+                    <td>Free Throw Percentage</td>
+                    <td>74.5%</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
     <!-- Fan Zone -->
     <section id="fan-zone">
         <h2>Fan Zone</h2>
-        <p>Leave your comments, share predictions, and vote for your MVP!</p>
         <textarea id="fan-comments" placeholder="Share your thoughts..."></textarea>
-        <button id="submit-comment">Submit</button>
+        <button onclick="addComment()">Submit</button>
         <div id="fan-comments-list"></div>
     </section>
 
-    <!-- Articles & News -->
-    <section id="news">
-        <h2>Articles & News</h2>
-        <p>Stay updated with the latest insights and team updates!</p>
-        <!-- Articles Placeholder -->
-    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Xavier Hoops Hub. All Rights Reserved.</p>
+    </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function addComment() {
+            const commentBox = document.getElementById('fan-comments');
+            const commentList = document.getElementById('fan-comments-list');
+            const comment = commentBox.value.trim();
+            if (comment) {
+                const newComment = document.createElement('div');
+                newComment.textContent = comment;
+                commentList.appendChild(newComment);
+                commentBox.value = '';
+            }
+
+        }
+<script src="script.js"></script>
+
+    </script>
 </body>
 </html>

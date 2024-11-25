@@ -1,70 +1,96 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.header {
-    background: navy;
-    color: white;
-    padding: 1rem 0;
+header {
+    background: #012169;
+    color: #fff;
     text-align: center;
+    padding: 1rem 0;
 }
 
 .navbar a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
+    font-weight: bold;
 }
 
 .hero {
     background: url('assets/images/hero.jpg') no-repeat center center/cover;
-    color: white;
+    color: #fff;
     text-align: center;
-    padding: 2rem;
+    padding: 3rem 1rem;
 }
 
-h2 {
-    color: navy;
-}
-
+/* Section Styles */
 section {
-    padding: 1rem;
+    padding: 2rem;
     margin: 1rem auto;
     max-width: 1200px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Game Recap Grid */
+/* Game Recap Styles */
 .game-recap-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 20px;
 }
 
-.game-recap-container .recap-card {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    flex: 1 1 30%;
-    background: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.recap-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background: #f9f9f9;
+    flex: 1 1 calc(33.333% - 20px);
 }
 
-/* Player Grid */
+/* Player Grid Styles */
 .player-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
-    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
-.player-grid .player-card {
-    background: white;
-    padding: 1rem;
+.player-card {
     text-align: center;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 15px;
 }
 
-/* Fan
+.player-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Stats Table Styles */
+.stats-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.stats-table th, .stats-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.stats-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Fan Zone */
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
