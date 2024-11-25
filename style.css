@@ -21,7 +21,6 @@ body {
   display: flex;
   flex-direction: column; /* Stack content vertically */
   align-items: center; /* Center content horizontally */
-  justify-content: flex-start; /* Prevent stretching */
   border: 1px solid #ccc; /* Add a border to the card */
   border-radius: 10px; /* Rounded corners */
   padding: 10px;
