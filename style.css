@@ -69,3 +69,25 @@ body {
   background-color: #003366;
   color: white;
 }
+#horizontal-scroll {
+  max-width: 100%; /* Limit the width of the section */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent content from wrapping to the next line */
+  padding: 10px; /* Add padding inside the section */
+  border: 1px solid #ddd; /* Optional: Add a border for visibility */
+}
+
+.scroll-content {
+  display: inline-block; /* Ensure items stay on the same line */
+}
+
+.item {
+  display: inline-block; /* Align items horizontally */
+  margin-right: 15px; /* Add spacing between items */
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-width: 100px; /* Ensure items have a consistent width */
+  text-align: center;
+}
