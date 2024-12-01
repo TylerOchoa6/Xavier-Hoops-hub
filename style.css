@@ -38,14 +38,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #0b233f;
+  background-color: #0c233c;
   color: white;
   text-align: center;
   padding: 20px;
 }
 
 .logo{
-  height:120px;
+  height:70px;
   width: auto:
   background-color: white;
   padding: 5px;
