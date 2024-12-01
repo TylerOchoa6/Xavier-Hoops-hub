@@ -12,15 +12,21 @@ body {
     border-radius: 10px; 
   }
 
-  .player-card {
+ .player-card {
+    width: 200px; /* Set a fixed width for the player cards */
     text-align: center;
-    flex-wrap: wrap;
-    margin: 10px; 
-    padding: 10px; 
-    border: 1px solid #ddd; 
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
-    border-radius: 10px; 
-  }
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.player-grid {
+    display: flex;          /* Use flexbox for layout */
+    flex-wrap: wrap;        /* Allow items to wrap onto the next line */
+    gap: 20px;              /* Add space between the player cards */
+    justify-content: center; /* Center-align the rows */
+}
 
 
 .header {
