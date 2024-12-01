@@ -35,12 +35,24 @@ body {
 
 
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #003366;
   color: white;
   text-align: center;
   padding: 20px 0;
 }
 
+.logo{
+  height:60px;
+  width: auto:
+}
+
+.header-text{
+  text-align: center;
+  flex-grow: 1;
+}
 .navbar {
   background-color: #00509e;
   color: white;
