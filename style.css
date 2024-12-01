@@ -90,3 +90,13 @@ body {
   min-width: 100px; /* Ensure items have a consistent width */
   text-align: center;
 }
+.game-recap a {
+    color: #00509e;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.game-recap a:hover {
+    color: #003366;
+    text-decoration: none;
+}
