@@ -107,7 +107,7 @@ body {
   border: 1px solid #ddd; /* Optional: Add a border for visibility */
 }
 .scroll-content {
-  display: inline-block; /* Ensure items stay on the same line */
+  display: inline-block;
 }
 .item {
   display: inline-block; /* Align items horizontally */
