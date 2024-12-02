@@ -13,7 +13,7 @@ body {
   }
 
  .player-card {
-    width: 200px; /* Set a fixed width for the player cards */
+    width: 200px;
     text-align: center;
     background-color: #f1f1f1;
     padding: 10px;
@@ -23,14 +23,14 @@ body {
 }
 
 .player-grid {
-    display: flex;          /* Use flexbox for layout */
-    flex-wrap: wrap;        /* Allow items to wrap onto the next line */
-    gap: 20px;              /* Add space between the player cards */
-    justify-content: center; /* Center-align the rows */
-    max-width: 100%;        /* Prevent the grid from exceeding the container width */
-    padding: 10px;          /* Add padding inside the grid container */
-    box-sizing: border-box; /* Ensure padding is included in the total width */
-    overflow: hidden;       /* Prevent overflow */
+    display: flex;         
+    flex-wrap: wrap;        
+    gap: 20px;              
+    justify-content: center; 
+    max-width: 100%;    
+    padding: 10px;     
+    box-sizing: border-box;
+    overflow: hidden;       
 }
 
 
@@ -118,31 +118,6 @@ body {
   border-radius: 5px;
   min-width: 100px; /* Ensure items have a consistent width */
   text-align: center;
-}
-.game-recap a {
-    color: #00509e;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.game-recap a:hover {
-    color: #003366;
-    text-decoration: none;
-}
-
-/* Style for the content (hidden by default) */
-.content {
-    padding: 0 15px;
-    display: none;
-    background-color: #f1f1f1;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    overflow: hidden;
-}
-
-.content p {
-    margin: 10px 0;
 }
 
 
